@@ -2,6 +2,8 @@
 Having trouble deciding where to eat? Let us surprise you with your preferences in mind!
 
 ## Intended Project
+![image](https://github.com/sethwhy/RyteEats/assets/89601183/b147e4a5-d2cc-4878-a0b8-e9cb61292235)
+
 Ideas -
 Brand names - ryte eats, efen, suggs, PlatePalooza, 
 FoodFinderX, EatEase
