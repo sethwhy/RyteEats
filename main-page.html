@@ -1,0 +1,257 @@
+<!-- Show foods near you, most popular choices, drive dist, special occasion suggestsions etc-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main-page-style.css" />
+    <title>Ryte E</title>
+  </head>
+  <body>
+    <div id="tabs" class="container">
+      <header>
+        <nav class="links1">
+          <ul class="links1">
+            <img
+              class="logo"
+              src="photos/RE-logo.png"
+              alt="Ryte E logo"
+            />
+            <li>
+              <a href="#Fast food">Fast Food <i class="arrow down"></i></a>
+            </li>
+            <li>
+              <a href="#Restaurants">Restaurants <i class="arrow down"></i></a>
+            </li>
+            <li>
+              <a href="#Celebrations"
+                >Celebrations <i class="arrow down"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#About us">About Us</a>
+            </li>
+          </ul>
+          <ul class="links2">
+            <li>
+              <img
+                src="photos/location-point.png"
+                alt="point icon"
+                class="pinpoint"
+              />
+            </li>
+            <li>
+              <button type="submit" class="location-change">
+                Change your location
+              </button>
+            </li>
+            <li>
+              <img
+                src="photos/log-in-icon.png"
+                alt="Log in icon"
+                class="log-in-icon"
+              />
+            </li>
+           </ul>
+        </nav>
+      </header>
+      <div class="section-title">
+         <h1 class="web-title"><span style="color: rgb(174, 194, 238);">R</span>yteEats</h1>
+            <p class="intro"></p>
+          </div>
+    </div>
+    <div class="bdubs-line">
+      <p class="diff">
+        Favorite
+      </p>
+    <p class="diff2">
+      Picks
+    </p>
+        <li class="picks">
+          <a href="#fast-food" class="apicks">#1 MickyDeez </a>
+        </li>
+        <li class="picks">
+          <a href="#rester" class="apicks">#2 O garden </a>
+        </li>
+        <li class="picks">
+          <a href="#celeb" class="apicks">#3 Buffet </a>
+        </li>
+        <li class="picks">
+          <a href="#website" class="apicks">#4 example </a>
+        </li>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Spinning Wheel</title>
+        <style>
+            #wheel {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: #ddd;
+                overflow: hidden;
+            }
+    
+            #spinner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                transition: transform 3s ease-out;
+            }
+    
+            .number {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+                font-weight: bold;
+                color: black;
+                text-shadow: 2px 2px 2px 2px;
+            }
+    
+            #reset-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wheel">
+            <div id="spinner">
+                <div class="number">1</div>
+                <div class="number">2</div>
+                <div class="number">3</div>
+                <div class="number">4</div>
+                <div class="number">5</div>
+                <div class="number">6</div>
+                <div class="number">7</div>
+                <div class="number">8</div>
+                <div class="number">9</div>
+                <div class="number">10</div>
+            </div>
+            <div id="reset-icon">&#8634;</div>
+        </div>
+    
+        <button onclick="spinWheel()">Spin</button>
+    
+        <h2 id="result"></h2>
+    
+        <script>
+            function spinWheel() {
+                var spinner = document.getElementById("spinner");
+                var degrees = Math.floor(Math.random() * 360) + 720;
+                spinner.style.transform = "rotate(" + degrees + "deg)";
+    
+                var numbers = document.getElementsByClassName("number");
+                var resultElement = document.getElementById("result");
+    
+                setTimeout(function() {
+                    var result = Math.floor(Math.random() * 10) + 1;
+                    resultElement.textContent = "Result: " + result;
+    
+                    spinner.style.transform = "translate(-50%, -50%)"; // Reset the position after each spin
+                }, 3000);
+            }
+    
+            var resetIcon = document.getElementById("reset-icon");
+            resetIcon.addEventListener("click", function() {
+                var spinner = document.getElementById("spinner");
+                spinner.style.transform = "translate(-50%, -50%)";
+            });
+        </script>
+    </body>
+    </html>
+    
+
+
+    
+
+    <div class="section-middle">
+      <div class="grid-layout">
+        <div class="img-container">
+          <img
+          src="photos/mcdonalds-recommendation.webp"
+          alt="Meal from McDonald's"
+          style="width: 600px; height: 410px; position: relative; right: 123px;"
+        />
+        </div>
+      <div class="message-container">
+      <h1 class="title" id="fast-food" style="  text-shadow: 1px 1px 2px #000000;
+      ">Fast Food - McDonald's</h1>
+      <p class="body text">
+        The Big Mac, an iconic burger created by McDonald's, is a mouthwatering
+        classic that has delighted taste buds around the world.
+      </p>
+      <button type="button" class="view-product-btn"><a href="https://www.mcdonalds.com/us/en-us.html" target="_blank">Order Now</a></button>
+    </div>
+  </div>
+
+      <div class="grid-layout">
+      <div class="img-container">
+        <img
+      src="photos/olivegarden-recommendation.webp"
+      alt="Meal from olive garden"
+      style="width: 600px; height: 410px; position: relative; right: 123px;"
+    />
+      </div>
+      <div class="message-container">
+      <h1 class="title" id="rester" style="  text-shadow: 1px 1px 2px #000000;
+      ">Dinner - Olive Garden</h1>
+      <p>
+        The Pasta Shrimp Chicken Red Pepper meal at Olive Garden is a delightful
+        combination of flavors and textures.
+      </p>
+      <button type="button" class="view-product-btn"><a href="https://www.olivegarden.com/home" target="_blank">Order Now</a></button>
+      </div>
+      </div>
+      
+      <div class="grid-layout">
+        <div class="img-container">
+          <img src="photos/coral-recommendation.jpg" alt="Meal from Golden Coral" style="width: 600px; height: 410px; position: relative; right: 20px;"/>
+          </div>
+          <div class="message-container">
+            <h1 class="title" id="celeb" style="text-shadow: 1px 1px 2px #000000;">Celebration - Golden Coral</h1>
+      
+      <p>
+        When dining at Golden Corral, guests can expect a diverse and abundant
+        selection of food that caters to a variety of tastes and preferences.
+      </p>
+      <button type="button" class="view-product-btn"><a href="https://www.goldencorral.com/" target="_blank">Order Now</a></button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="copyright">
+        <h2 class="footer-text">
+          <span style="color: white"> &copy; 2023 Ryte Eats. All rights reserved.</span>
+        </h2>
+      </div>
+    </footer>
+  </body>
+</html>

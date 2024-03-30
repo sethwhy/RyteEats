@@ -1,0 +1,315 @@
+/*this is a comment*/
+/*
+* color: rgb(125, 148, 211);
+* inverted - color: rgb(211, 188, 125);
+*
+*/
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow {
+  /* For drop down menu*/
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: relative;
+  left: 4px;
+  bottom: 2px;
+}
+
+body {
+  /* All text */
+  background: url(photos/white-gradient.png) no-repeat center/cover;
+  margin: 0;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+.intro {
+  border-color: #000000;
+  /*background-color: #ffd9d3;*/
+  margin: 0;
+  padding: 0;
+  background: url("photos/delivery-options.jpg") no-repeat center/cover;
+  border-style: solid;
+  display: inline-block;
+  border-width: 3px;
+  width: 550px;
+  height: 150px;
+  border-radius: 0px;
+}
+
+.logo {
+  /*Ryte Eats logo*/
+  width: 75px;
+  position: relative;
+  right: 30px;
+  bottom: 4px;
+  float: left;
+  cursor: pointer;
+  filter: invert(35%) sepia(60%) saturate(3574%) hue-rotate(200deg)
+    brightness(120%) contrast(76%);
+}
+
+.title {
+  color: rgb(125, 148, 211);
+  font-weight: 900;
+  /*text-shadow: 1px 2px 2px #000000;*/
+  text-align: center;
+}
+
+.web-title {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-shadow: 1px 2px 2px #000000;
+  text-align: center;
+}
+
+p {
+  /*text color*/
+  color: rgb(0, 0, 0);
+}
+
+a {
+  /*heading color*/
+  color: white;
+}
+
+#tabs {
+  margin: 0;
+  padding: 0;
+  background: url("photos/food-presentation.jpg") no-repeat center/cover;
+  /*box-shadow: 0px 0px 9px 9px #080808 inset;*/
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#tabs .section-title {
+  margin-top: 35vh;
+}
+
+#tabs h1 {
+  font-size: 9rem;
+  margin-bottom: 0;
+}
+
+nav {
+  height: 70px;
+  z-index: 1;
+  width: 100%;
+  background-color: #303030;
+  position: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 30px;
+  width: 150px;
+  background: transparent;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #4e4e4e;
+}
+
+.log-in-icon {
+  width: 35px;
+  height: auto;
+  background-color: transparent;
+  filter: invert();
+  box-sizing: border-box;
+  position: relative;
+  left: 850px;
+  bottom: 0px;
+}
+
+.log-in-icon:hover {
+  cursor: pointer;
+}
+
+.location-change {
+  background-color: transparent;
+  filter: invert();
+  border-color: transparent;
+  color: rgb(78, 67, 3);
+  position: relative;
+  left: 800px;
+  top: 8px;
+}
+
+.location-change:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pinpoint {
+  filter: invert(90%) sepia(9%) saturate(815%) hue-rotate(62deg) brightness(92%)
+    contrast(100%);
+  width: 35px;
+  position: relative;
+  left: 800px;
+  top: 3px;
+}
+
+.section-title {
+  max-width: auto;
+  text-align: center;
+}
+
+.bdubs-line {
+  position: absolute;
+  width: 100%;
+  margin-top: 0px;
+  height: 215px;
+  background: url(photos/food-ingredients-kawaii-doodle-set_6997-3202.avif)
+    center;
+  background-size: 1300px;
+  background-position: 100px 900px;
+  box-shadow: 0 0 20px 8px rgb(0, 0, 0);
+}
+
+.picks {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  position: relative;
+  left: 350px;
+  bottom: 180px;
+  font-size: x-large;
+  text-shadow: 1px 2px 2px #000000;
+  border-color: #000000;
+  border-style: solid;
+  margin-right: 60px;
+  border-radius: 60px;
+  background-color: rgb(125, 148, 211);
+}
+
+.apicks {
+  text-decoration: none;
+}
+
+.picks:hover {
+  background-color: #000000;
+}
+
+.diff {
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  position: relative;
+  width: fit-content;
+  left: 30px;
+  top: 20px;
+  text-shadow: 1px 1px 3px #000000;
+  color: white;
+}
+
+.diff2 {
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 65px;
+  position: relative;
+  width: fit-content;
+  left: 10px;
+  bottom: 50px;
+  text-shadow: 1px 1px 3px #000000;
+  color: rgb(174, 194, 238);
+}
+
+.copyright {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  bottom: 2px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-weight: 100;
+}
+
+footer {
+  background-color: #1f1f1f;
+}
+
+.grid-layout {
+  background-color: rgb(255, 255, 255);
+  border-radius: 32px;
+  box-sizing: border-box;
+  color: rgb(72, 82, 89);
+  display: grid;
+  height: 410px;
+  margin-left: 30px;
+  margin-top: 30px;
+  overflow: hidden; /* important */
+  position: relative;
+  text-size-adjust: 100%;
+  width: 600px;
+  z-index: 0;
+}
+
+.message-container {
+  align-self: center;
+  background-clip: border-box;
+  background-color: rgb(255, 255, 255);
+  background-size: auto;
+  box-sizing: border-box;
+  color: rgb(72, 82, 89);
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  height: 410px;
+  min-height: 410px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  width: 271.75px;
+  z-index: 1;
+}
+
+.img-container {
+  box-sizing: border-box;
+  color: rgb(72, 82, 89);
+  display: block;
+  grid-column-start: 7 col-start;
+  grid-row-end: auto;
+  grid-row-start: 1;
+  height: 410px;
+  margin-left: -24px auto;
+  position: relative;
+  width: 295.75px;
+}
+
+.view-product-btn {
+  padding: 10px 20px;
+  background-color: #ff8800;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
